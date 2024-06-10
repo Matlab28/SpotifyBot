@@ -21,8 +21,8 @@ import org.springframework.stereotype.Service;
 public class SpotifyService {
     private final TelegramApiClient telegramApiClient;
     private final SpotifyApiClient spotifyApiClient;
-    private final String host = "spotify23.p.rapidapi.com";
-    private final String key = "674678e122mshd00ec5b8f945302p1052bcjsn0ad69ed2af91";
+    private final String host = "YOUR_API_HOST";
+    private final String key = "YOUR_API_KEY";
     private Long lastUpdateId = 0L;
 
     public SpotifyService(TelegramApiClient telegramApiClient, SpotifyApiClient spotifyApiClient) {
