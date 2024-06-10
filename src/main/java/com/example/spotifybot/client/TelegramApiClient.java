@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "telegramApi", url = "https://api.telegram.org/bot7213771489:AAHJXb6EAbP5UiieQFkUHg1MPWvsEvsmj_c")
+@FeignClient(name = "telegramApi", url = "https://api.telegram.org/botYOUR_BOT_TOKEN")
 public interface TelegramApiClient {
     @GetMapping("/getUpdates?offset={value}")
     RootRequestDto getUpdates(@PathVariable Long value);
